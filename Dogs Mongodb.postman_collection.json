@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "fe7a7fa4-292f-4a0e-8e2b-1ef07da79a22",
+		"name": "Dogs Mongodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Dog",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Cinnamon\",\r\n    \"age\": 5,\r\n    \"isFriendly\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/dogs/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"dogs",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Dog",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/dogs/622adb9f15b7b9f71b6580bc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"dogs",
+						"622adb9f15b7b9f71b6580bc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Dogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/dogs/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"dogs",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
